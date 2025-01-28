@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    float temperature;
+printf("Enter the temperature in celsius: ");
+scanf("%f", &temperature);
+    if (temperature < 0) {
+        printf("Freezing weather\n");
+    } else if (temperature >= 0 && temperature <= 10) {
+        printf("Very Cold weather\n");
+    } else if (temperature > 10 && temperature <= 20) {
+        printf("Cold weather\n");
+    } else {
+        printf("Invalid option\n");
+    }
+
+    return 0;
+}
