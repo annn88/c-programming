@@ -1,0 +1,37 @@
+#include <stdio.h>
+int main() {
+    int num1, num2, result;
+    char operation;
+    
+    printf("Enter number1 and number2: ");
+    scanf("%d%d", &num1, &num2);
+    
+    printf("Enter the operation: ");
+    scanf(" %c", &operation);  // Notice the space before %c
+    
+    switch (operation) {
+        case '+':
+            result = num1 + num2;
+            printf("Result: %d + %d = %d\n", num1, num2, result);
+            break;
+        case '-':
+            result = num1 - num2;
+            printf("Result: %d - %d = %d\n", num1, num2, result);
+            break;
+        case '*':
+            result = num1 * num2;
+            printf("Result: %d * %d = %d\n", num1, num2, result);
+            break;
+         case '/':
+            result = num1 / num2;
+            printf("Result: %d / %d = %d\n", num1, num2, result);
+            break;
+         case '%':
+            result = num1 % num2;
+            printf("Result: %d %% %d = %d\n", num1, num2, result);
+            break;
+      
+    }
+    return 0;
+}
+
